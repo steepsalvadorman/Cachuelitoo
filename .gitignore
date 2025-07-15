@@ -1,15 +1,52 @@
+# === Android Studio & IntelliJ ===
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+*.ipr
+*.iws
+
+# === Gradle ===
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# === Local configuration files ===
 local.properties
+*.keystore
+*.jks
+
+# === OS-specific ===
+.DS_Store
+Thumbs.db
+
+# === Log & Backup files ===
+*.log
+*.tmp
+*.bak
+*.swp
+
+# === APK & AAB output ===
+*.apk
+*.ap_
+*.aab
+
+# === NDK & CMake ===
+.externalNativeBuild
+.cxx/
+
+# === Cache ===
+.cache/
+captures/
+output.json
+
+# === Jetpack Compose previews ===
+**/androidTest/**/compose/**
+**/debug/**/compose/**
+
+# === Fastlane ===
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
+
+# === Misc ===
+*.orig
