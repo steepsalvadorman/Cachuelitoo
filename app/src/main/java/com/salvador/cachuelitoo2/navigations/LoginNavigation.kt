@@ -34,9 +34,7 @@ fun LoginNavigation(
         composable(
             route = "/login"
         ){
-            LoginScreen(
-                viewModel = loginScreenViewModel
-            )
+            LoginScreen()
         }
     }
 }
