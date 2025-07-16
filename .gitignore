@@ -1,78 +1,11 @@
-# Android/IntelliJ/Android Studio related
-*.iml
-.gradle/
+#DIRECTORIOS
 .idea/
-local.properties
-*.log
-*.hprof
-
-# Build output
-/build/
-*/build/
-!gradle/wrapper/gradle-wrapper.jar
-
-# NDK
-.externalNativeBuild/
-
-# Gradle
 .gradle/
-**/build/
-!**/src/**/build/
-
-# Signing keys
-*.jks
-*.keystore
-
-# Google Services
-google-services.json
-firebase-debug.log
-
-# Jetpack Compose compiler cache (optional)
-.kotlin/
-
-# Kotlin
-*.class
-*.kotlin_metadata
-*.kotlin_module
-
-# Dependency caches
-.cxx/
-**/.DS_Store
-
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Windows
-*.bat
-*.exe
-
-# macOS
-*.swp
-*.swo
-
-# Linux
-*~
-
-# Test outputs
-/test-results/
-*.xml
-
-# Misc
+/build
+/gradle
+/captures
+#ARCHIVOS
+**/*.iml
+gradlew
+gradlew.bat
 *.apk
-*.ap_
-
-# Android Studio Navigation safe args
-navigation.json
-
-# Fastlane metadata
-fastlane/report.xml
-fastlane/preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
-
-# Crashlytics
-crashlytics-build.properties
-
-# GitHub Copilot & other AI tools (optional)
-*.copilot.*
