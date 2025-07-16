@@ -30,6 +30,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -183,7 +184,7 @@ fun LoginButton() {
     ) {
         Text(
             text = "ENTRAR",
-            color = Color(0xFF000000),
+            color = Color(0xFF1E1E1E),
             fontWeight = FontWeight.Bold
         )
     }
@@ -197,9 +198,9 @@ fun SocialLoginButtons() {
             .padding(all = 50.dp),
         horizontalArrangement = Arrangement.SpaceEvenly
     ) {
-        SocialButton("Facebook", R.drawable.facebook, modifier = Modifier.weight(1f))
+        SocialButton("Facebook", R.drawable.facebook, modifier = Modifier.weight(1f).shadow(4.dp, RoundedCornerShape(24.dp), clip = true))
         Spacer(modifier = Modifier.width(12.dp))
-        SocialButton("Google", R.drawable.google, modifier = Modifier.weight(1f))
+        SocialButton("Google", R.drawable.google, modifier = Modifier.weight(1f).shadow(4.dp, RoundedCornerShape(24.dp), clip = true))
     }
 }
 
@@ -207,7 +208,6 @@ fun SocialLoginButtons() {
 fun SocialButton(text: String, iconRes: Int, modifier: Modifier = Modifier) {
     OutlinedButton(
         onClick = {},
-        shape = RoundedCornerShape(25.dp),
         modifier = modifier,
         border = BorderStroke(1.dp, Color(0xFF1C5D99)),
         colors = ButtonDefaults.outlinedButtonColors(containerColor = Color.White)

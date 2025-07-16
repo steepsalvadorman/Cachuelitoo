@@ -1,6 +1,7 @@
 package com.salvador.cachuelitoo2.navigations
 
 import androidx.compose.runtime.Composable
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -12,8 +13,8 @@ import com.salvador.cachuelitoo2.ui.app.viewmodels.SplashScreenViewModel
 
 @Composable
 fun LoginNavigation(
-    loginScreenViewModel: LoginScreenViewModel,
-    splashScreenViewModel: SplashScreenViewModel
+    loginScreenViewModel: LoginScreenViewModel = hiltViewModel(),
+    splashScreenViewModel: SplashScreenViewModel = hiltViewModel()
 
 ) {
     val navController = rememberNavController()
