@@ -20,4 +20,4 @@
 - **Framework UI:** Jetpack Compose
 - **Arquitectura:** MVVM (Model-View-ViewModel)
 - **Backend:** Firebase (Authentication, Firestore, Storage)
-- **Otros:** Material 3, DataStore, Room (si aplica)
+- **Otros:** Material 3, DataStore, Room 
